@@ -101,11 +101,66 @@ After adding the snippet:
 
 ---
 
-## 5. Need Help?
+# Additional Notes on Other Font Formats (TTF, OTF, WOFF)
 
-This README can be extended with:
-- A screenshot version  
-- A detailed theme‑editor walkthrough  
-- A glossary of common Skilljar customization patterns  
+While `.woff2` is the recommended format for Skilljar due to performance and compatibility, other formats do work. Below is guidance for using them.
 
-Just ask if you'd like additional sections.
+---
+
+## Supported Web Font Formats
+
+### **1. WOFF2 (Recommended)**
+- Best performance  
+- Smallest file size  
+- Ideal for Skilljar learner environments  
+
+```css
+src: url('font.woff2') format('woff2');
+```
+
+---
+
+### **2. WOFF (Optional Fallback)**
+A good fallback format, though larger than WOFF2.
+
+```css
+src: url('font.woff') format('woff');
+```
+
+---
+
+### **3. TTF (TrueType)**
+Supported but not recommended due to large file sizes.
+
+```css
+src: url('font.ttf') format('truetype');
+```
+
+---
+
+### **4. OTF (OpenType)**
+Similar to TTF—large file sizes and includes advanced typography features not typically needed in Skilljar.
+
+```css
+src: url('font.otf') format('opentype');
+```
+
+---
+
+## Example: Multiple Font Formats
+
+```css
+@font-face {
+  font-family: 'My Custom Font';
+  src: 
+    url('font.woff2') format('woff2'),
+    url('font.woff') format('woff'),
+    url('font.ttf') format('truetype'),
+    url('font.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+```
+
+---
