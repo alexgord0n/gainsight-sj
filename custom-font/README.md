@@ -12,7 +12,7 @@ Skilljar doesn’t allow file uploads directly in the theme editor, but any **Ri
 1. Open **any page with a Rich Text field** such as:
    - Course → Edit → Description  
    - Lesson text fields  
-2. Click **Insert → Image/File → Upload**  
+2. Click **Insert Link → Next to Link URL → Upload**  
 3. Select your `.woff2` font file  
 4. Skilljar will upload it to S3 and generate a **public URL**  
 5. Copy that URL for use in your CSS
