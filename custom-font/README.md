@@ -1,4 +1,4 @@
-# Adding Custom Web Fonts (Brown LL Sub) to Skilljar
+# Adding Custom Web Fonts to Skilljar
 
 This guide explains how to upload custom font files to Skilljar and apply them globally using a custom `<style>` snippet. Using Skilljar’s built‑in file uploader ensures fonts are hosted on Skilljar’s S3 and load reliably across all course pages.
 
