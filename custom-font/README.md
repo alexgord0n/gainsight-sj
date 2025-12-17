@@ -77,7 +77,7 @@ Paste the following `<style>` block, replacing the placeholder URLs with your re
 h1, h2, h3, h4, h5, h6,
 div, p, span, button, a,
 input, select, option, textarea {
-
+  font-family: 'Brown LL Sub', sans-serif;
 }
 
 /* Alternative Application */
