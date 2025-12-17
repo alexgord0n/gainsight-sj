@@ -27,7 +27,7 @@ Repeat this for each font style:
 
 ## 2. Add Fonts to the Global Snippet
 
-Go to: **Theme → Advanced → Global Snippets**
+Go to: **Theme → Code Snippets → Global Head Snippet**
 
 Paste the following `<style>` block, replacing the placeholder URLs with your real S3 links.
 
@@ -87,15 +87,15 @@ input, select, option, textarea {
 ## 3. Publish Your Theme
 After adding the snippet:
 1. Click **Save**  
-2. Click **Publish Theme**  
-3. Visit a course page to confirm fonts load correctly  
+2. Visit a course page to confirm fonts load correctly
+3. Check inspector **under Computed**
 
 ---
 
 ## 4. Best Practices
 
 - **Use `.woff2`** for optimal performance  
-- **Place your `<style>` block at the top** of Global Snippets  
+- **Place your `<style>` block at the top** of Global Head Snippet
 - **Test multiple Skilljar pages**, as different page types load CSS differently  
 - **Use `font-display: swap`** to avoid invisible text during loading  
 
